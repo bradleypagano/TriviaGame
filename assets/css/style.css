@@ -1,0 +1,13 @@
+.col-12{
+    text-align: center;
+    color: darkred;
+}
+body{
+    background-image: url("../images/tires.jpg");
+}
+.container{
+    background-color: beige;
+}
+#timeLeft{
+    text-align: center;
+}
