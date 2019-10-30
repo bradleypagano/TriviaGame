@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    let correct = 0;
-    let incorrect = 0;   
-    let timer= 3;
+    $(".questionForm").hide();
+    let timer= 50;
     let gameTime;
     function countDown(){
         timer--;
@@ -18,6 +17,7 @@ $(document).ready(function () {
         $("#emptyDiv").empty();
         $("#emptyDiv").append("<h5>"+"Seconds Remaining: "+ timer + "</h5>");
         gameTime = setInterval(countDown,1000);
+        $(".questionForm").show();
         
     });
 

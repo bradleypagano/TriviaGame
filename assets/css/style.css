@@ -11,3 +11,14 @@ body{
 #timeLeft{
     text-align: center;
 }
+.questions{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.form-check{
+    text-align: center;
+    margin-bottom: 20px;
+}
