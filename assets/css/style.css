@@ -22,3 +22,11 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+#correct{
+    text-align: center;
+    font-size: 48px;
+}
+#incorrect{
+    text-align: center;
+    font-size: 48px;
+}

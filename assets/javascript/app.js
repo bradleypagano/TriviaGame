@@ -2,12 +2,12 @@ $(document).ready(function () {
     $(".questionForm").hide();
     $("#submitButtonDiv").hide();
     $(".answers").hide();
-    let timer= 5;
+    let timer= 30;
     let gameTime;
     function asnwerCheck(){
         let correct = 0;
         let incorrect = 0;
-        const answers = $('input:checked');
+        const answers = $(':radio[name=driver]:checked');
         for(i = 0; i < answers.length; i++){
             if (answers[i].value == "right"){
                 correct++;
@@ -15,7 +15,7 @@ $(document).ready(function () {
                 incorrect++;
             };
         };
-        $("#corect").text("Right: " + correct);
+        $("#correct").text("Right: " + correct);
         $("#incorrect").text("Wrong: " + incorrect);
     };
     function countDown(){
