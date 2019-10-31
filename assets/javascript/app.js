@@ -2,10 +2,10 @@ $(document).ready(function () {
     $(".questionForm").hide();
     $("#submitButtonDiv").hide();
     $(".answers").hide();
-    let timer= 30;
+    let timer = 30;
     let gameTime;
     // Not able to get this function to work.
-    function asnwerCheck(){
+    function answerCheck(){
         let correct = 0;
         let incorrect = 0;
         const answers = $("input[type='radio']:checked");
@@ -26,7 +26,7 @@ $(document).ready(function () {
             $("#emptyDiv").empty();
             $(".questionForm").empty();
             $("#submitButtonDiv").empty();
-            asnwerCheck();
+            answerCheck();
             $(".answers").show();
             clearInterval(gameTime);
         };
@@ -44,7 +44,7 @@ $(document).ready(function () {
         $("#emptyDiv").empty();
         $(".questionForm").empty();
         $("#submitButtonDiv").empty();
-        asnwerCheck();
+        answerCheck();
         $(".answers").show();
         clearInterval(gameTime);
     });
