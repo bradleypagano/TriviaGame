@@ -28,7 +28,6 @@ $(document).ready(function () {
             asnwerCheck();
             $(".answers").show();
             clearInterval(gameTime);
-            console.log("hey there");
         };
     };
 
