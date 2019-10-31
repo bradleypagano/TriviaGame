@@ -4,12 +4,13 @@ $(document).ready(function () {
     $(".answers").hide();
     let timer= 30;
     let gameTime;
+    // Not able to get this function to work.
     function asnwerCheck(){
         let correct = 0;
         let incorrect = 0;
-        const answers = $(':radio[name=driver]:checked');
+        const answers = $("input[type='radio']:checked");
         for(i = 0; i < answers.length; i++){
-            if (answers[i].value == "right"){
+            if (answers[i].value === "right"){
                 correct++;
             } else{
                 incorrect++;
